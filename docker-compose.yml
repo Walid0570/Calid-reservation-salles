@@ -10,6 +10,7 @@ services:
       - ./public:/var/www/html
       - ./app:/var/www/html/app
     ports:
+      - "3000:80"
       - "8000:80"
     depends_on:
       - db
